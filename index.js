@@ -30,6 +30,10 @@ app.get('/stats', (req, res) => {
   res.send(myCache.getStats());
 })
 
+app.get('/hello', (req, res) => {
+  res.send('> Hello, World!_');
+})
+
 app.listen(port, () => {
   console.log('Example server is running at port ' + port)
 })
